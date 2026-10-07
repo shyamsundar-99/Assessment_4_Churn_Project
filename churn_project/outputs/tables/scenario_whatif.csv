@@ -1,0 +1,4 @@
+scenario,members_targeted,baseline_expected_churners,scenario_expected_churners,churners_avoided,relative_reduction,note
+A. Resolve open support issues,537,80.69044477478222,56.67721796357373,24.01322681120849,0.29759690726990795,members with a ticket/complaint in last 3m: tickets and complaint flags set to zero
+B. Re-engagement push (app + email + coupon),356,97.31097865830247,42.89324339395163,54.417735264350846,0.5592147567997763,"members whose purchases fell >30% vs prior 3m: +3 app sessions, +2 emails opened, +1 coupon redeemed"
+C. Purchase uplift (+2 transactions in 3m),356,97.31097865830247,78.73290024568234,18.57807841262013,0.19091451621152788,same at-risk group; what the model would say if offers translated into two extra purchases (upper bound)

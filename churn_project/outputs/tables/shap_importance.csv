@@ -1,0 +1,39 @@
+feature,mean_abs_shap
+Transactions (last month),1.1588710853938238
+Months since last purchase,0.8664859636360526
+App sessions (last 3m),0.515389052778633
+Spend (last 3m),0.41761837763150633
+Emails opened (last 3m),0.4168260357631245
+App sessions per purchase,0.33591247155814424
+Transactions (last 3m),0.2837051842377684
+Coupons redeemed (last 3m),0.22013967563382442
+Promo share of purchases,0.19685861204180072
+Purchase volatility (6m),0.19160273862010951
+Support tickets (last 3m),0.18516256462976222
+Coupons redeemed (last 6m),0.16239920102092106
+App-session trend,0.10446003489416218
+Transaction trend (last3/prior3),0.09079023405334855
+City,0.08958794327684463
+Avg basket (last 3m),0.08409473974727726
+Months with no record (last 6),0.08375478048737706
+Email-open trend,0.08115518634448482
+Support tickets (last 6m),0.07684518417351409
+Age,0.06612229717927794
+Tenure (months),0.062275449585870224
+Categories bought (last 3m),0.05804786625338571
+Marketing opt-in,0.05136119938993
+Home-store price tier,0.04471966469715739
+Preferred category,0.044608222497119744
+Spend trend,0.04240212881994891
+Support-ticket trend,0.03750164719361237
+Spend (prior 3m),0.03645789457893435
+Membership tier,0.029542941281598855
+Transactions (prior 3m),0.02431150707143956
+Transactions (last 6m),0.02386827569237541
+App sessions (prior 3m),0.013325202375115659
+Active months (last 6),0.010000600817394081
+Zero-purchase months (last 3),0.008713410141558233
+Gender,0.005192315715849086
+Complaint (last 6m),0.0015087088444754907
+Complaint (last 3m),0.0007243663010468125
+Age missing,0.0

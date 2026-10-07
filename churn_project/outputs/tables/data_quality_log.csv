@@ -1,0 +1,19 @@
+table,issue,rows_affected,action
+profile,exact duplicate rows,8,dropped
+profile,duplicate CUSTOMER_ID after exact-dup removal,0,none left
+profile,inconsistent casing/whitespace in CITY,104,strip + title-case
+profile,inconsistent casing/whitespace in MEMBERSHIP_TIER,104,strip + title-case
+profile,missing AGE,78,median impute + missing flag (in features)
+profile,missing GENDER,52,label 'Unknown'
+profile,missing HOME_STORE_PRICE_TIER,130,label 'Unknown'
+label,exact duplicate rows,5,dropped
+label,missing LAST_PURCHASE_DATE,120,kept (no purchase in window)
+activity,exact duplicate rows,58,dropped
+activity,conflicting duplicates for same customer-month (sign-flipped spend),2,kept the non-negative row
+activity,negative TOTAL_SPEND,22,abs() if TRANSACTIONS>0 else 0
+activity,spend>0 but TRANSACTIONS==0,0,spend set to 0 (no purchase recorded)
+activity,TRANSACTIONS>0 but spend==0,20,kept (could be fully-discounted baskets); flagged only
+activity,outlier TOTAL_SPEND > 99.9% quantile ($685),26,winsorised at cap
+all,customers not present in all of profile/label,0,dropped from modelling
+activity,missing customer-months (no row between signup and Jun-2024),11013,"treated as zero activity: rows stop appearing once members lapse (affected customers grow monotonically from about 140 in Jan-23 to about 1,050 in Jun-24)"
+activity,customers with no activity rows at all,6,"kept in profile, never eligible"
